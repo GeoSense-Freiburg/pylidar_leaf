@@ -1,0 +1,44 @@
+# Sample configuration for PyLidar Leaf Scanner
+# Copy this file to your project and modify as needed
+
+# Scanner settings
+scanner:
+  # Maximum valid range for points (in meters)
+  max_range: 120
+  
+  # Sensor height above ground (in meters)
+  # Leave as null to use values from file metadata if available
+  sensor_height: null
+  
+  # Whether to apply tilt transformation
+  transform: true
+  
+  # Offset to apply to zenith angles (in radians)
+  zenith_offset: 0
+  
+  # Type of scan ('hemi', 'hinge', or 'ground')
+  scan_type: "hemi"
+
+# Output settings
+output:
+  # LAS/LAZ point format ID
+  # 6 is recommended as it includes RGB colors
+  point_format: 6
+  
+  # Intensity scaling parameters
+  intensity:
+    # Use logarithmic scaling for better visualization
+    log_scaling: true
+    # Maximum value in raw data (used for scaling)
+    max_value: 100
+
+# Processing settings
+processing:
+  # Number of parallel workers for batch processing
+  num_workers: 10
+  
+  # Process directories recursively
+  recursive: false
+  
+  # Enable verbose output
+  verbose: false
