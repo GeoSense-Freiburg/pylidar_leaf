@@ -1,0 +1,13 @@
+name: pylidar_leaf
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - laspy>=2.0
+  - matplotlib  # for visualization if needed
+  - pip
+  - pip:
+    - glob2  # enhanced glob functionality
