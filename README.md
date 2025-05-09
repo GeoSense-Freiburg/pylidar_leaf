@@ -8,8 +8,6 @@ A Python toolset for processing and converting laser scanner CSV files to LAZ fo
 - Processes both first and last return points with their intensity values
 - Includes range (r) and height (z) as custom LAZ parameters
 - Handles different scan types (hemi, hinge, ground)
-- Applies logarithmic scaling to intensity values for better differentiation
-- Provides robust error handling for CSV parsing with flexible column handling
 - Supports parallel processing for batch conversions
 
 ## Installation
